@@ -1,6 +1,10 @@
 import curses
 
-class GTDCalendar:
+class GTDCalendarData:
+    def __init__(self, sched: list):
+        self.sched = sched
+
+class DrawGTDCalendar:
     @staticmethod
     def init_colors():
         curses.init_pair(2, curses.COLOR_GREEN, curses.COLOR_WHITE)
